@@ -1,0 +1,330 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background: linear-gradient(to right, #F95B80 ,  #F8658E   , #F76F9C   , #F779AE  , #F684BE   , #F58ED0   , #F492EF , #E883F1 , #D974F3 , #C963F5  );
+    
+     
+  
+  
+
+}
+
+html{
+
+    scroll-behavior: smooth;/*newwwwwwwwwwwwwwwwwwwwwwww*/
+    font-size: 62.5%;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.regi2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 858px;
+}
+
+.signup{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+#signupForm{
+  width: 261px;
+}
+
+.signup .parent{
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1); /* Very light transparency */
+    backdrop-filter: blur(3px); /* Subtle blur effect */
+    -webkit-backdrop-filter: blur(3px);
+}
+.signup .parent input{
+    border: 1px;
+    text-transform: capitalize;
+    background-color: transparent;
+    border-bottom: 1px solid ;
+    position: relative;
+    z-index: 2;
+}
+
+.signup .parent label{
+    position: absolute;
+    color: #00000078;
+    transition: 0.3s;
+    margin-left: -219px;
+    
+  }
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+.signup .parent input.uni {
+    border-bottom: none; /* Remove the bottom border */
+    position: static; /* Reset position */
+    z-index: auto; /* Reset z-index */
+}
+.signup .in{
+  background-color:#ED6DAA;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.signup .in:hover{
+  background-color: #FC97CB;
+}
+
+
+
+
+
+
+
+
+
+.signup .parent input:focus + label,
+.signup .parent input:not(:placeholder-shown) + label {
+    margin-top: -20px;
+    color: black !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.signup .parent .icons{
+  display: flex;
+  justify-content: center;
+  gap: 18%;
+}
+.signup .parent .icons div{
+  background-color: #ED6DAA;
+  width: 20%;
+  box-shadow: 1px 1px 4px black;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.signup .parent .icons div:hover{
+  color: black;
+  background-color: #FD5790;
+}
+
+
+
+
+
+
+
+.signup .row a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+
+}
+
+.signup .row a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+  .visible-xs {
+      display: block !important
+  }
+  .hidden-xs {
+      display: none !important
+  }
+  .responsive-paragraph {
+      text-align: center;
+      font-size: 20px !important
+  }
+  .signup{
+    font-size: 15px;
+    
+  }
+  #signupForm{
+    padding: 10px;
+
+  }
+  
+  .signup .parent{
+      padding: 10px;
+    
+  }
+  .signup .parent label{
+
+    margin-left: -165px;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+  .visible-xs {
+      display: block !important
+  }
+  .hidden-xs {
+      display: none !important
+  }
+  .responsive-paragraph {
+      text-align: center;
+      font-size: 20px !important
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { /* Small Screen Rules */
+  .container {
+      width: 750px
+  }
+  .visible-sm {
+      display: block !important
+  }
+  .hidden-sm {
+      display: none !important
+  }
+  .home .overlay .info{
+    font-size: 9px;
+  }
+  .visible-list{
+    display: grid !important;
+  }
+
+
+  
+ 
+}
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) { /* Medium Screen Rules */
+.container {
+    width: 970px
+}
+.visible-md {
+    display: block !important
+}
+.hidden-md {
+    display: none !important
+}
+}
+
+@media (min-width: 1200px) { /* Large Screen Rules */
+.container {
+    width: 1170px
+}
+.visible-lg {
+    display: block !important
+}
+.hidden-lg {
+    display: none !important
+}
+}
+
+  /* Start My Framework */
+  
+  .container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px
+  }
+  
+  .text-center {
+    text-align: center
+  }
+  
+  .clearfix {
+    clear: both
+  }
+  
+  .visible-xs,
+  .visible-sm,
+  .visible-md,
+  .visible-lg {
+    display: none
+  }
+  
+  .float-left {
+    float: left
+  }
+  
+  .float-right {
+    float: right
+  }
+  
+  .h1 {
+    font-size: 2em
+  }
+  
+  .responsive-paragraph {
+    line-height: 1.8;
+    font-size: 22px
+  }
+  
+  .responsive-image {
+    width: 100%
+  }
+  
+  .classic-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .img-circle {
+    border-radius: 50%
+  }
+  
+  .img-thumbnail {
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #CCC
+  }
+  .blurred-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.336);
+    backdrop-filter: blur(10px); /* Add blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    z-index: 1; /* Ensure the blur effect is behind the content */
+    transition: 0.3s;
+}
+
+  /* End My Framework */
+
+
+
+
