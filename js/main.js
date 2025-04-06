@@ -54,7 +54,11 @@ function validateForm(event) {
 
     // If form is valid, submit via AJAX
     if (isValid) {
-
+        result.innerHTML = `<p style="color: green; font-weight: bold;">Signup complete!</p>`;
+        form.reset();  // Optionally reset the form after submission
+        setTimeout(() => {
+            window.location.href = '/index.html'; // Redirect to home page
+        }, 3000);
         // AJAX request to submit form data to PHP
         let formData = new FormData(form);
 
@@ -70,11 +74,7 @@ function validateForm(event) {
             try{
                 data = JSON.parse(data);  // Try parsing the response manually
                 if (data.success) {
-                    result.innerHTML = `<p style="color: green; font-weight: bold;">Signup complete!</p>`;
-                    form.reset();  // Optionally reset the form after submission
-                    setTimeout(() => {
-                        window.location.href = 'first.php'; // Redirect to home page
-                    }, 3000);
+                    
                 } else {
                     result.innerHTML = `<p style="color: red; font-weight: bold;">${data.message}</p>`;  // Display error message
                 }
