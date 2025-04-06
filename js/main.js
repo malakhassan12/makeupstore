@@ -57,7 +57,7 @@ function validateForm(event) {
         result.innerHTML = `<p style="color: green; font-weight: bold;">Signup complete!</p>`;
         form.reset();  // Optionally reset the form after submission
         setTimeout(() => {
-            window.location.href = '/index.html'; // Redirect to home page
+            window.location.href = '/makeupstore/index.html'; // Redirect to home page
         }, 3000);
         // AJAX request to submit form data to PHP
         let formData = new FormData(form);
